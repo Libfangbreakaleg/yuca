@@ -1,0 +1,81 @@
+// 完整的60种道具
+export const ITEMS = [
+  // 武器类（20种）
+  { id: 1, name: "淬血玫瑰刃", type: "weapon", power: 20, agility: 5, heal: 0, luck: 3, description: "刀锋染有神秘玫瑰印记" },
+  { id: 2, name: "银月匕首", type: "weapon", power: 15, agility: 10, heal: 0, luck: 2, description: "在月光下锻造的匕首" },
+  { id: 3, name: "荆棘长鞭", type: "weapon", power: 18, agility: 8, heal: -5, luck: 0, description: "带有尖刺的长鞭" },
+  { id: 4, name: "古董燧发枪", type: "weapon", power: 25, agility: -5, heal: 0, luck: 5, description: "填装缓慢但威力巨大" },
+  { id: 5, name: "精钢长剑", type: "weapon", power: 22, agility: 3, heal: 0, luck: 1, description: "标准的骑士长剑" },
+  { id: 6, name: "骨制短刀", type: "weapon", power: 12, agility: 15, heal: 0, luck: 0, description: "轻巧锋利的短刀" },
+  { id: 7, name: "重铁锤", type: "weapon", power: 30, agility: -10, heal: 0, luck: -3, description: "沉重但破坏力强" },
+  { id: 8, name: "毒牙匕首", type: "weapon", power: 16, agility: 12, heal: -8, luck: 0, description: "涂有毒药的匕首" },
+  { id: 9, name: "符文战斧", type: "weapon", power: 28, agility: -3, heal: 0, luck: 8, description: "刻有古代符文的战斧" },
+  { id: 10, name: "影袭双刃", type: "weapon", power: 20, agility: 20, heal: 0, luck: 0, description: "适合快速连击的双刃" },
+  { id: 11, name: "火焰法杖", type: "weapon", power: 24, agility: 0, heal: 0, luck: 6, description: "能够召唤火焰" },
+  { id: 12, name: "冰霜弓", type: "weapon", power: 18, agility: 15, heal: 0, luck: 4, description: "箭矢附带冰冻效果" },
+  { id: 13, name: "雷电长矛", type: "weapon", power: 26, agility: 5, heal: 0, luck: 3, description: "能够释放雷电" },
+  { id: 14, name: "圣光权杖", type: "weapon", power: 15, agility: 0, heal: 10, luck: 5, description: "蕴含神圣力量" },
+  { id: 15, name: "暗影镰刀", type: "weapon", power: 32, agility: 8, heal: -15, luck: -5, description: "被诅咒的武器" },
+  { id: 16, name: "机械弩", type: "weapon", power: 20, agility: 10, heal: 0, luck: 0, description: "精密制作的弩" },
+  { id: 17, name: "水晶法球", type: "weapon", power: 18, agility: 0, heal: 5, luck: 10, description: "能够预知未来" },
+  { id: 18, name: "藤蔓长弓", type: "weapon", power: 16, agility: 18, heal: 3, luck: 2, description: "用古老藤蔓制作" },
+  { id: 19, name: "龙牙短剑", type: "weapon", power: 35, agility: 5, heal: 0, luck: 15, description: "用龙牙锻造的神器" },
+  { id: 20, name: "星辰魔杖", type: "weapon", power: 40, agility: 0, heal: 10, luck: 20, description: "蕴含星辰之力" },
+
+  // 防具类（15种）
+  { id: 21, name: "荆棘护甲", type: "armor", power: 10, agility: -3, heal: 0, luck: 0, description: "布满尖刺的护甲" },
+  { id: 22, name: "银质胸甲", type: "armor", power: 15, agility: -5, heal: 5, luck: 3, description: "精致的银制护甲" },
+  { id: 23, name: "皮制轻甲", type: "armor", power: 5, agility: 15, heal: 0, luck: 0, description: "轻便灵活的护甲" },
+  { id: 24, name: "符文盾牌", type: "armor", power: 12, agility: -2, heal: 3, luck: 8, description: "刻有防护符文" },
+  { id: 25, name: "迷雾斗篷", type: "armor", power: 0, agility: 25, heal: 0, luck: 5, description: "能够融入迷雾" },
+  { id: 26, name: "圣骑士铠甲", type: "armor", power: 20, agility: -8, heal: 15, luck: 10, description: "神圣祝福的铠甲" },
+  { id: 27, name: "影舞者披风", type: "armor", power: 5, agility: 30, heal: 0, luck: 3, description: "提升潜行能力" },
+  { id: 28, name: "龙鳞护手", type: "armor", power: 18, agility: 10, heal: 0, luck: 12, description: "用龙鳞打造" },
+  { id: 29, name: "水晶护目镜", type: "armor", power: 0, agility: 0, heal: 0, luck: 25, description: "能够看到隐藏之物" },
+  { id: 30, name: "治疗者长袍", type: "armor", power: 0, agility: 0, heal: 20, luck: 8, description: "提升治疗效果" },
+  { id: 31, name: "幸运护符", type: "armor", power: 0, agility: 0, heal: 0, luck: 30, description: "带来好运的护符" },
+  { id: 32, name: "力量腰带", type: "armor", power: 25, agility: -5, heal: 0, luck: 0, description: "增加肌肉力量" },
+  { id: 33, name: "敏捷靴子", type: "armor", power: 0, agility: 35, heal: 0, luck: 0, description: "提升移动速度" },
+  { id: 34, name: "心灵头环", type: "armor", power: 0, agility: 0, heal: 15, luck: 10, description: "增强精神力量" },
+  { id: 35, name: "全能戒指", type: "armor", power: 10, agility: 10, heal: 10, luck: 10, description: "平衡所有属性" },
+
+  // 药剂类（15种）
+  { id: 36, name: "治疗药水", type: "potion", power: 0, agility: 0, heal: 30, luck: 0, description: "恢复生命值" },
+  { id: 37, name: "清醒药剂", type: "potion", power: 0, agility: 0, heal: 0, luck: 0, description: "恢复SAN值" },
+  { id: 38, name: "力量药剂", type: "potion", power: 25, agility: 0, heal: 0, luck: 0, description: "暂时提升力量" },
+  { id: 39, name: "敏捷药剂", type: "potion", power: 0, agility: 25, heal: 0, luck: 0, description: "暂时提升敏捷" },
+  { id: 40, name: "幸运药剂", type: "potion", power: 0, agility: 0, heal: 0, luck: 30, description: "暂时提升幸运" },
+  { id: 41, name: "全能药剂", type: "potion", power: 15, agility: 15, heal: 15, luck: 15, description: "全面提升" },
+  { id: 42, name: "解毒剂", type: "potion", power: 0, agility: 0, heal: 20, luck: 0, description: "解除中毒状态" },
+  { id: 43, name: "净化圣水", type: "potion", power: 0, agility: 0, heal: 25, luck: 5, description: "净化邪恶气息" },
+  { id: 44, name: "隐身药水", type: "potion", power: 0, agility: 40, heal: 0, luck: 0, description: "暂时隐身" },
+  { id: 45, name: "巨人药剂", type: "potion", power: 50, agility: -20, heal: 0, luck: 0, description: "巨大化但笨重" },
+  { id: 46, name: "缩小药剂", type: "potion", power: -10, agility: 50, heal: 0, luck: 0, description: "变小但灵活" },
+  { id: 47, name: "夜视药剂", type: "potion", power: 0, agility: 0, heal: 0, luck: 20, description: "黑暗中视物" },
+  { id: 48, name: "水下呼吸", type: "potion", power: 0, agility: 0, heal: 0, luck: 15, description: "水下呼吸能力" },
+  { id: 49, name: "火焰抵抗", type: "potion", power: 10, agility: 0, heal: 10, luck: 0, description: "抵抗火焰伤害" },
+  { id: 50, name: "冰霜抵抗", type: "potion", power: 10, agility: 0, heal: 10, luck: 0, description: "抵抗冰霜伤害" },
+
+  // 关键物品和线索（10种）
+  { id: 51, name: "庄园旧钥匙", type: "key", power: 0, agility: 0, heal: 0, luck: 15, description: "打开上锁的房间" },
+  { id: 52, name: "古旧日记", type: "clue", power: 0, agility: 0, heal: 0, luck: 5, description: "记录庄园往事" },
+  { id: 53, name: "神秘地图", type: "clue", power: 0, agility: 0, heal: 0, luck: 10, description: "标注隐藏地点" },
+  { id: 54, name: "家族徽章", type: "key", power: 5, agility: 5, heal: 5, luck: 10, description: "家族的象征" },
+  { id: 55, name: "破碎怀表", type: "clue", power: 0, agility: 0, heal: 0, luck: 8, description: "时间永远停摆" },
+  { id: 56, name: "血色玫瑰", type: "clue", power: -5, agility: 0, heal: -10, luck: -5, description: "永不凋零的花朵" },
+  { id: 57, name: "地下室钥匙", type: "key", power: 0, agility: 0, heal: 0, luck: 12, description: "通往地下室" },
+  { id: 58, name: "古书残页", type: "clue", power: 0, agility: 0, heal: 0, luck: 6, description: "记载古老咒语" },
+  { id: 59, name: "银质徽章", type: "key", power: 0, agility: 0, heal: 0, luck: 18, description: "特殊权限证明" },
+  { id: 60, name: "庄园主戒指", type: "artifact", power: 30, agility: 30, heal: 30, luck: 30, description: "庄园主的象征" }
+];
+
+export const ITEM_SPAWNS = {
+  '独立院落': ['卧室书桌', '衣柜', '床头柜', '浴室镜子', '花园藤椅'],
+  '温泉': ['大温泉石边', '小温泉池底', '更衣室', '休息长椅'],
+  '图书室': ['古籍书架', '阅读桌', '地图柜', '古董地球仪'],
+  '健身房': ['跑步机储物', '健身球下', '仰卧起坐器'],
+  '咖啡馆': ['吧台', '咖啡机', '沙发缝隙', '书架'],
+  '大花园': ['瀑布后面', '石桌下', '野营地帐篷', '烧烤架'],
+  '人造瀑布': ['水帘后洞穴', '池底岩石'],
+  '山顶野营地': ['帐篷内', '烧烤摊工具盒', '篝火灰烬']
+};
