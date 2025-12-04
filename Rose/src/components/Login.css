@@ -1,0 +1,101 @@
+/* Login.css - 登录组件样式 */
+
+.login-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.login-container h1 {
+  color: #e74c3c;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.login-options button {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #4a6491;
+  background: white;
+  color: #4a6491;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.login-options button.active {
+  background: #4a6491;
+  color: white;
+  box-shadow: 0 5px 15px rgba(74, 100, 145, 0.3);
+}
+
+.login-options button:hover:not(.active) {
+  background: #f0f0f0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4a6491;
+  outline: none;
+  box-shadow: 0 0 10px rgba(74, 100, 145, 0.3);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 75, 43, 0.4);
+}
